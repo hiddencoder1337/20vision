@@ -1,0 +1,117 @@
+#!/system/xbin/bash
+clear
+
+echo "
+"
+clear
+printf "\033[31;1m                     -{ 20vision Toolskit }\n"
+printf "\033[0m             -{ Coded by HiddenCoder }\n "
+echo ""
+sleep 1
+printf "\033[32;1m #Eagle Cyber Army\n"
+sleep 1
+echo ""
+printf "\033[34;1m Menu List :\n"
+printf "\033[36;1m 1) Admin Finder\n"
+printf " 2) Shell Finder\n"
+printf " 3) Email Bomber\n"
+printf " 4) Com_Fabrik Exploiter\n"
+printf " 5) Metasploit Installer\n"
+printf " 6) About\n"
+printf " 0) Exit"
+echo ""
+sleep 1
+printf "\033[35;1m Choose number: \033[30;1m"
+read pilih
+printf "\033[0m"
+
+if [ $pilih = 1 ] || [ $pilih = 1 ]
+then
+clear
+printf "\033[31;1m                       -{ Admin Finder } \n"
+printf "\033[0m             -{ Coded by HiddenCoder } \n"
+echo ""
+sleep 1
+python2 adfin.pyc
+fi
+
+if [ $pilih = 2 ] || [ $pilih = 2 ]
+then
+clear
+printf "\033[31;1m                        -{ Shell Finder } \n"
+printf "\033[0m             -{ Coded by HiddenCoder } \n"
+echo""
+sleep 1
+python2 shellfin.pyc
+fi
+
+if [ $pilih = 3 ] || [ $pilih = 3 ]
+then
+clear
+printf "\033[31;1m                        -{ Email Bomber } \n"
+printf "\033[0m             -{ Coded by HiddenCoder } \n"
+echo ""
+sleep 1
+python2 ebomb.pyc
+fi
+
+if [ $pilih = 4 ] || [ $pilih = 4 ]
+then
+clear
+printf "\033[31;1m                        -{ Com_Fabrik Exploiter } \n"
+printf "\033[0m             -{ Coded by HiddenCoder } \n"
+echo ""
+sleep 1
+python2 com_fabrik.pyc
+fi
+
+if [ $pilih = 5 ] || [ $pilih = 5 ]
+then
+clear
+echo " Installing Metasploit... "
+sleep 1
+apt update && apt upgrade
+apt install git
+apt install curl
+cd $HOME
+curl -LO https://raw.githubusercontent.com/hiddencoder1337/toolskit/master/msfinstaller.sh
+chmod 777 msfinstaller.sh
+sh msfinstaller.sh
+cd $HOME/20vision
+echo " Metasploit Installed ;)"
+fi
+
+if [ $pilih = 6 ] || [ $pilih = 6 ]
+then
+clear
+printf "\033[31;1m                        -{ 20vision Toolskit } \n"
+printf "\033[0m             -{ Coded by HiddenCoder } \n"
+echo ""
+sleep 1
+printf "\033[32;1m About This Tools\n"
+echo ""
+echo " Author    : HiddenCoder a.k.a Akbar"
+echo " Facebook  : Akbar Bagus Bachtiar"
+echo " Whatsapp  : +6283878585806"
+echo ""
+echo " Thanks to all Termuxer Indonesia"
+echo " I'm nothing without you :)"
+echo ""
+printf "\033[33;1m Press ENTER to continue / press CTRL + C to exit "
+read ENTER
+./20vision
+fi
+
+if [ $pilih = 0 ] || [ $pilih = 0 ]
+then
+printf "\033[31;1m Exiting"
+sleep 1
+printf "."
+sleep 1
+printf "."
+sleep 1
+printf "."
+printf "\033[0m\n"
+exit
+fi
+
